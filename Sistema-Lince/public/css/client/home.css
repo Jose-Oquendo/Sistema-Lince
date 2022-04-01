@@ -5,5 +5,9 @@ body{
 }
 .carousel-item{
     height: 490px;
+    align-items: center;
     background-color: cadetblue;
+}
+.carousel-item img{
+    margin: auto;
 }

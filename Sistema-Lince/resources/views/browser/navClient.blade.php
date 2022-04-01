@@ -35,19 +35,19 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <div class="row container-fluid">
                 <div class="col-sm-4 col-lg-2 offset-lg-1 pb-1">
-                    <a class="btn btn-categorie p-3 nav-link" href="#">Sala</a></button>
+                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue') }}">Sala</a></button>
                 </div>
                 <div class="col-sm-4 col-lg-2 pb-1">
-                    <a class="btn btn-categorie p-3 nav-link" href="#">Comedores</a></button>
+                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue') }}">Comedores</a></button>
                 </div>
                 <div class="col-sm-4 col-lg-2 pb-1">
-                    <a class="btn btn-categorie p-3 nav-link" href="#">Alcobas</a></button>
+                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue') }}">Alcobas</a></button>
                 </div>
                 <div class="col-sm-6 col-lg-2 pb-1">
-                    <a class="btn btn-categorie p-3 nav-link" href="#">Oficina</a></button>
+                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue') }}">Oficina</a></button>
                 </div>
                 <div class="col-sm-6 col-lg-2 pb-1">
-                    <a class="btn btn-categorie p-3 nav-link" href="#">Electronicos</a></button>
+                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue') }}">Electronicos</a></button>
                 </div>
             </div>
         </div>

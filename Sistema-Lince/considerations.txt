@@ -15,3 +15,7 @@ Employees
 
 Clients
     prueba@test - qwer1234
+
+
+para la resolucion de imagees se utilizo la herramienta
+https://letsenhance.io/boost
