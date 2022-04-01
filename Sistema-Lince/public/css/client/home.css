@@ -3,7 +3,7 @@ body{
     padding: 0;
     background-color: rgb(254, 254, 254);
 }
-.img-presentation{
-    width: 30px;
-    height: 400px;
+.carousel-item{
+    height: 490px;
+    background-color: cadetblue;
 }
