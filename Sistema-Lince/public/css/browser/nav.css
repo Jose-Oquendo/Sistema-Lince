@@ -1,0 +1,30 @@
+/*seccion 1 - search - logo - user - basket*/
+.nav-1{
+    /* background-color: rgb(1, 124, 124); */
+    /* rgb(83, 42, 112); */
+    background-color: rgb(80, 40, 100);
+    font-size: 40px;
+}
+.nav-1 a{
+    font-size: 20px;
+    color: white;
+}
+.nav-1 .logo{
+    font-size: 40px;
+}
+
+.nav-1 li{
+    display: inline-block;
+    list-style-type: none;
+}
+/*seccion 2 categories*/
+.nav-2{
+    background-color: white;
+}
+.btn-categorie{
+    border-radius: 55px;
+    background-color: gray;
+    width: 72%;
+    margin-left: 5%;
+    color: white;
+}

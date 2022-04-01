@@ -1,0 +1,17 @@
+Debido a que el sistema utiliza un sistema de cifrado de contraseñas, se gurdaran aqui
+las contraseñas para los usuarios mediante el proceso de desarrollo y prueba.
+
+**se encripta en mysql con md5()**
+
+Para entrar a la direccion de login empleados:
+    username = p123p
+    password = 1234
+    
+Administrator 
+    adminjo@correo - 2308s
+
+Employees
+    pau1087@correo - 4562
+
+Clients
+    prueba@test - qwer1234
