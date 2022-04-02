@@ -1,0 +1,9 @@
+.footer-1{
+    background-color: rgb(124, 112, 103);
+}
+.footer-1 .col-sm-3{
+    font-size: 35px;
+}
+.footer-2 img.linceLogo{
+    filter: invert(100%);
+}

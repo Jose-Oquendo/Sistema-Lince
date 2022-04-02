@@ -30,9 +30,16 @@ Route::get('/salida', [SessionsController::class, 'destroy'])->name('login.destr
 Route::get('/registro', [RegisterController::class, 'show'])->name('register.index')->middleware('guest');
 Route::post('/registro', [RegisterController::class, 'store'])->name('register.store');
 
-//views for employee login
+//views for manage login
+#employee
 Route::get('/emp', [ManageController::class, 'index_emp'])->name('emp.index')->middleware('auth.emp');
+Route::get('/emp/productos', [ManageController::class, 'view_products'])->name('emp.products')->middleware('auth.emp');
+Route::get('/emp/pedidos', [ManageController::class, 'view_orders'])->name('emp.orders')->middleware('auth.emp');
+Route::get('/emp/pqrs', [ManageController::class, 'view_pqrs'])->name('emp.pqrs')->middleware('auth.emp');
+#admin
 Route::get('/admin', [ManageController::class, 'index_admin'])->name('admin.index')->middleware('auth.admin');
+Route::get('/admin/empleados', [ManageController::class, 'view_employees'])->name('admin.employees')->middleware('auth.admin');
+Route::get('/admin/informes', [ManageController::class, 'view_reports'])->name('admin.reports')->middleware('auth.admin');
 
 //views fros client
 Route::view('/perfil', 'client.profile')->name('profile')

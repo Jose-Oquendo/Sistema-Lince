@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Bienvenido Lince</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/manage/main.css') }}">
+    <title>Control - {{auth()->user()->rol}}</title>
 </head>
 <header>
     @include('browser/navEmployee')
 </header>
 <body>
-    <div class="container mt-4"> 
+    <div class="container mt-4 p-5 bg-white"> 
         @yield('content')
     </div>
     <!--<script src="https://kit.fontawesome.com/ed5652a487.js" crossorigin="anonymous"></script>-->

@@ -1,7 +1,7 @@
 @extends('layout/index')
 @section('title', 'Ingreso - Lince')
 @section('content')
-    <div class="row">
+    <div class="row mb-5">
         <div class="col-md-7 m-3 p-5 bg-light">
             <h2>Ingreso</h2>
             @error('message')

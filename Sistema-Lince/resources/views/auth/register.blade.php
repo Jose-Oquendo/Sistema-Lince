@@ -1,7 +1,7 @@
 @extends('layout/index')
 @section('title', 'Registro - Lince')
 @section('content')
-    <div class="p-3 bg-light">
+    <div class="p-3 bg-light mb-5">
         <div class="aling-center text-center">
             <img src="" alt="Logo"><i class="fa-brands fa-slack"></i></img>
         </div>

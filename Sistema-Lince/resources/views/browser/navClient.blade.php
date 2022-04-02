@@ -7,16 +7,20 @@
                     <button class="btn btn-light" type="submit"><i class="fas fa-magnifying-glass"></i></button>
                 </form>
             </div>
-            <div class="col-md-4 text-center">
-                <li class="navbar-brand"><a class="nav-link logo" href="{{ route('home') }}"><i class="fa-brands fa-slack"></i></a></li>
+            <div class="col-md-4 text-center p-0">
+                <li class="navbar-brand p-0">
+                    <a class="nav-link logo p-0" href="{{ route('home') }}">
+                        <img src="{{ asset('img/linceLogo.png') }}" class="linceLogo" alt="Logo Lince" height="90px">
+                    </a>
+                </li>
             </div>
             <div class="col-md-4 text-center">
                 @if(auth()->check())
-                    <li class="nav-item"><a class="nav-link" href="{{ route('profile') }}"><i class="fa fa-user"></i> Mi cuenta</a></li>
-                    <li class="nav-item me-5"><a class="nav-link" href="{{ route('basket') }}"><i class="fas fa-basket-shopping"></i></a></li>
+                    <li class="nav-item"><a class="bnt-user nav-link" href="{{ route('profile') }}"><i class="fa fa-user"></i> Mi cuenta</a></li>
+                    <li class="nav-item me-5"><a class="bnt-user nav-link" href="{{ route('basket') }}"><i class="fas fa-basket-shopping"></i></a></li>
                 @else
-                    <li class="nav-item"><a class="nav-link" href="{{ route('login.index') }}"><i class="fa fa-user"></i> Mi cuenta</a></li>
-                    <li class="nav-item me-5"><a class="nav-link" href="{{ route('login.index') }}"><i class="fas fa-basket-shopping"></i></a></li>
+                    <li class="nav-item"><a class="bnt-user nav-link" href="{{ route('login.index') }}"><i class="fa fa-user"></i> Mi cuenta</a></li>
+                    <li class="nav-item me-5"><a class="bnt-user nav-link" href="{{ route('login.index') }}"><i class="fas fa-basket-shopping"></i></a></li>
                 @endif
             </div>
         </div>

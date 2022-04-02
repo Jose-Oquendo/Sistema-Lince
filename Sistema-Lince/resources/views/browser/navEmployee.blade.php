@@ -1,16 +1,24 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <img src="{{ asset('img/linceLogo.png') }}" alt="Logo Lince" height="90px">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link disabled">Disabled</a>
-        <a class="nav-link" href="{{ route('login.destroy') }}">Cerrar sesion</a>
+        @if(auth()->user()->rol == 'admin')
+          <a class="nav-link active" aria-current="page" href="{{ route('admin.index') }}">Inicio</a>
+          <a class="nav-link" href="{{ route('admin.employees') }}">Empleados</a>
+          <a class="nav-link" href="{{ route('admin.reports') }}">Informes</a>
+        @else
+          <a class="nav-link active" aria-current="page" href="{{ route('emp.index') }}">Inicio</a>
+          <a class="nav-link" href="{{ route('emp.products') }}">Productos</a>
+          <a class="nav-link" href="{{ route('emp.orders') }}">Pedidos</a>
+          <a class="nav-link" href="{{ route('emp.pqrs') }}">PQRS</a>
+        @endif
+        <div class="text-end">
+          <a class="nav-link" href="{{ route('login.destroy') }}">Cerrar sesion</a>
+        </div>
       </div>
     </div>
   </div>
