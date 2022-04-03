@@ -1,7 +1,18 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+}
+/* .body-container{
+    margin-top: 16em;
+} */
+.bread-color{
+    background-color: rgba(26, 35, 58, 0.842);
+}
+.bread-color li a{
+    color: white;
+}
+.bread-color li.active{
+    color: rgb(207, 207, 207);
 }
 .carousel-item{
     height: 30em;

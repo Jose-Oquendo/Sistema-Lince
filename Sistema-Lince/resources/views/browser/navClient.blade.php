@@ -1,17 +1,15 @@
-<nav class="navbar-expand-md client-header">
-    <div class="container-fluid nav-1 py-3">
+<nav class="navbar-expand-md">
+    <div class="container-fluid nav-1">
         <div class="row">
             <div class="col-sm-12 col-md-4">
-                <form class="d-flex px-3">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <form class="d-flex px-3 my-3" action="{{ route('products.catalogue') }}">
+                    <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-light" type="submit"><i class="fas fa-magnifying-glass"></i></button>
                 </form>
             </div>
             <div class="col-md-4 text-center p-0">
                 <li class="navbar-brand p-0">
-                    <a class="nav-link logo p-0" href="{{ route('home') }}">
-                        <img src="{{ asset('img/linceLogo.png') }}" class="linceLogo" alt="Logo Lince" height="90px">
-                    </a>
+                    <img src="{{ asset('img/linceLogo.png') }}" class="linceLogo" alt="Logo Lince" height="80px">
                 </li>
             </div>
             <div class="col-md-4 text-center">
@@ -25,7 +23,7 @@
             </div>
         </div>
     </div><!--end of nav-1-->
-    <div class="container-fluid nav-2 py-3">
+    <div class="container-fluid nav-2 py-2">
         <div class="row-1 d-flex mb-3">
             <div class="d-block d-md-none">
                 <h2>Nuestras categorias!</h2>
@@ -39,19 +37,19 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <div class="row container-fluid">
                 <div class="col-sm-4 col-lg-2 offset-lg-1 pb-1">
-                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue') }}">Sala</a></button>
+                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue', 'Sala') }}">Sala</a></button>
                 </div>
                 <div class="col-sm-4 col-lg-2 pb-1">
-                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue') }}">Comedores</a></button>
+                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue', 'Comedores') }}">Comedores</a></button>
                 </div>
                 <div class="col-sm-4 col-lg-2 pb-1">
-                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue') }}">Alcobas</a></button>
+                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue', 'Alcobas') }}">Alcobas</a></button>
                 </div>
                 <div class="col-sm-6 col-lg-2 pb-1">
-                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue') }}">Oficina</a></button>
+                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue', 'Oficina') }}">Oficina</a></button>
                 </div>
                 <div class="col-sm-6 col-lg-2 pb-1">
-                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue') }}">Electronicos</a></button>
+                    <a class="btn btn-categorie p-3 nav-link" href="{{ route('products.catalogue', 'Electronicos') }}">Electronicos</a></button>
                 </div>
             </div>
         </div>

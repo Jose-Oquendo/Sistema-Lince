@@ -1,6 +1,13 @@
 @extends('layout/index')
 @section('title', 'Registro - Lince')
 @section('content')
+    <nav class="bread-color" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb p-5">
+            <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('login.index') }}">Ingreso</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Registro</li>
+        </ol>
+    </nav>
     <div class="p-3 bg-light mb-5">
         <div class="aling-center text-center">
             <img src="" alt="Logo"><i class="fa-brands fa-slack"></i></img>

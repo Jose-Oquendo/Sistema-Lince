@@ -1,5 +1,6 @@
 .footer-1{
-    background-color: rgb(124, 112, 103);
+    background-color: rgba(26, 35, 58, 0.842);
+    color: white;
 }
 .footer-1 .col-sm-3{
     font-size: 35px;

@@ -10,12 +10,14 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/client/home.css') }}">
     <title>@yield('title')</title>
 </head>
-<header>
-    @include('browser/navClient')
-</header>
 <body>
+    <header class="client-header">
+        @include('browser/navClient')
+    </header>
     <div class="container mt-4"> 
-        @yield('content')
+        <div class="body-container">
+            @yield('content')
+        </div>
     </div>
     @yield('home.register')<!--Section for recomend the register in the home page-->
     @include('browser/footerClient')

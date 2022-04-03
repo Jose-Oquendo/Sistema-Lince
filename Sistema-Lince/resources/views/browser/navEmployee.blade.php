@@ -14,7 +14,6 @@
           <a class="nav-link active" aria-current="page" href="{{ route('emp.index') }}">Inicio</a>
           <a class="nav-link" href="{{ route('emp.products') }}">Productos</a>
           <a class="nav-link" href="{{ route('emp.orders') }}">Pedidos</a>
-          <a class="nav-link" href="{{ route('emp.pqrs') }}">PQRS</a>
         @endif
         <div class="text-end">
           <a class="nav-link" href="{{ route('login.destroy') }}">Cerrar sesion</a>
@@ -23,3 +22,4 @@
     </div>
   </div>
 </nav>
+

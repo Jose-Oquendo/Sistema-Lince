@@ -24,7 +24,7 @@
 <div class="row mt-5">
     <div class="col-md-6">
         <div class="card card-categorie">
-            <a href="{{ route('products.catalogue') }}">
+            <a href="{{ route('products.catalogue', 'Sala') }}">
                 <img src="{{ asset('img/home/categorie-living-room_auto_x2.jpg') }}" class="card-img" alt="Imagen de StockSnap en Pixabay">
                 <div class="card-img-overlay categorie-tittle">
                     <p class="card-title"> Salas</p>
@@ -34,7 +34,7 @@
     </div>
     <div class="col-md-6">
         <div class="card card-categorie">
-            <a href="{{ route('products.catalogue') }}">
+            <a href="{{ route('products.catalogue', 'Comedores') }}">
                 <img src="{{ asset('img/home/categorie-dining-room.jpg') }}" class="card-img" alt="Imagen de ErikaWittlieb en Pixabay">
                 <div class="card-img-overlay categorie-tittle">
                     <p class="card-title"> Comedores</p>
@@ -46,7 +46,7 @@
 <div class="row my-3">
     <div class="col-md-4">
         <div class="card card-categorie">
-            <a href="{{ route('products.catalogue') }}">
+            <a href="{{ route('products.catalogue', 'Alcobas') }}">
                 <img src="{{ asset('img/home/categorie-bedroom.jpg') }}" class="card-img" alt="Imagen de khiem tran en Pixabay ">
                 <div class="card-img-overlay categorie-tittle">
                     <p class="card-title"> Alcobas</p>
@@ -56,7 +56,7 @@
     </div>
     <div class="col-md-4">
         <div class="card card-categorie">
-            <a href="{{ route('products.catalogue') }}">
+            <a href="{{ route('products.catalogue', 'Oficina') }}">
                 <img src="{{ asset('img/home/categorie-ofice.jpg') }}" class="card-img" alt="Imagen de ErikaWittlieb en Pixabay ">
                 <div class="card-img-overlay categorie-tittle">
                     <p class="card-title">Oficina</p>    
@@ -66,7 +66,7 @@
     </div>
     <div class="col-md-4">
         <div class="card card-categorie">
-            <a href="{{ route('products.catalogue') }}"><img src="{{ asset('img/home/categorie-electr.jpg') }}" class="card-img" alt="Imagen de JamesDeMers en Pixabay ">
+            <a href="{{ route('products.catalogue', 'Electronicos') }}"><img src="{{ asset('img/home/categorie-electr.jpg') }}" class="card-img" alt="Imagen de JamesDeMers en Pixabay ">
                 <div class="card-img-overlay categorie-tittle">
                     <p class="card-title "> Electronicos</p>
                 </div>
@@ -74,7 +74,7 @@
         </div>
     </div>
 </div>
-<section>
+<!-- <section>
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -85,7 +85,7 @@
                 <div class="d-flex p-5">
                     @for($i = 1; $i < 5; $i++)
                         <div class="card mx-3" style="width: 18rem;">
-                            <!-- <img src="..." class="card-img-top" alt="..."> -->
+                            <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -99,7 +99,7 @@
                 <div class="d-flex p-5">
                     @for($i = 1; $i < 5; $i++)
                         <div class="card mx-3" style="width: 18rem;">
-                            <!-- <img src="..." class="card-img-top" alt="..."> -->
+                            <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -111,7 +111,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 @endsection
 @section('home.register')
 <div class="container-fluid bg-light p-5">

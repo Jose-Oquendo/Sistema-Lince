@@ -19,4 +19,18 @@ class RegisterController extends Controller
         auth()->login($user);
         return redirect()->route('home');
     }
+
+    public function store_employee(Request $request){
+        $this->validate(request(), [
+            'password' => 'required|confirmed',
+        ]);
+        $emp = new User;
+        $emp->name = $request->name;
+        $emp->last_name = $request->last_name;
+        $emp->password = $request->password;
+        $emp->rol = 'employee';
+        $emp->email = $request->email;
+        $emp->save();
+        return redirect()->back();
+    }
 }
